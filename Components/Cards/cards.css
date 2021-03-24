@@ -1,0 +1,107 @@
+/* Cards */
+/* Vertical Card */
+.card{
+    /* border:1px solid black; */
+    width:315px;
+    height:500px;
+    margin-left:10rem;
+}
+.card:hover{
+   box-shadow:5px 10px 10px 7px #888888;
+}
+.card__description{
+   margin:0;
+   padding:1rem 2rem;
+   background: #e7e4e4;
+   /* background-color: #bed8f1; */
+   /* background-color:rgb(199, 247, 199); */
+}
+
+.details{
+    color:var(--primary-color);
+}
+
+/* card badge */
+.badge__container{
+    position: relative;
+}
+.card__badge{
+   background-color: rgb(236, 213, 213);
+   display:inline-block;
+   padding:5px 10px;
+   border-top-right-radius:15px;
+   border-bottom-right-radius: 15px;
+   position:absolute;
+   bottom:38rem;
+}
+
+/* horizontal card with over lay */
+.card__horizontal{
+   width: 400px;
+   height:380px;
+   margin-left:10rem;
+}
+.card__horizontal:hover{
+   box-shadow:5px 10px 10px 7px #f1cae2;
+}
+.horiztal__card{
+   width:400px;
+   height:300px;
+}
+.card__overlay{
+   position:relative;
+}
+.overlay__text{
+   position:absolute;
+   bottom:130px;
+   left:30px;
+   /* right:2px; */
+}
+
+/* Card with dismiss */
+.dismiss{
+   position:relative;
+}
+.dismiss .closebtn{
+   position: absolute;
+   bottom:355px;
+   left:380px;
+}
+.dismiss .closebtn :hover{
+   color:var(--primary-color);
+}
+
+/* Text only card */
+.text__card{
+   width:40rem;
+   height:20rem;
+   padding:2rem;
+   border:1px solid black;
+   box-shadow:13px 13px 21px -5px rgb(0 0 0 / 30%);
+   margin-left:10rem;
+}
+
+.text__content>h3{
+   padding:1rem 0;
+}
+.text__content>h4{
+   padding-bottom:1rem;
+}
+
+/* Responsive Image */
+/* On screens that are 768px wide or more, apply this */
+.round__img{
+   border-radius: 50%;
+}
+@media only screen and (min-width: 768px) {
+.responsive__img{
+   width:384px;
+   height:277px;
+}}
+
+@media screen and (max-width: 768px) {
+   .round__img{
+       width:142px;
+       height:142px;
+   }
+ }

@@ -1,0 +1,46 @@
+.input{
+    position:relative;
+}
+
+.input__form{
+    height:4rem;
+    outline: none;
+    border:1px solid #8a8787;
+    border-radius: 5px;
+    padding:0 0.75rem;
+    cursor: pointer;
+}
+
+label{
+    position: absolute;
+    left:2%;
+    top:25%;
+    background: #ffff;
+    color:#8a8787;
+    transition: all 0.4s ease-in-out;
+ }
+
+input:focus{
+    /* color:#FFFF; */
+    border: 2px solid var(--primary-color);
+}
+
+
+input:focus + label{
+  top:-20%;
+  padding: 0 0.45rem;
+  color: var(--primary-color);
+  background: var(--background-color);
+  border-radius:2px;
+  outline: none;
+  font-size: 1.3rem;
+}
+
+input[name=email]{
+    width:inherit;
+    transition: width .4s ease-in-out;
+}
+
+input[name=email]:focus{
+    width:270px;
+}

@@ -1,0 +1,18 @@
+.stacked__list,.spaced__list{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stacked__items,.spaced__items{
+    padding:1rem;
+    background-color:lightgray;
+    width:200px;
+    border-bottom: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.spaced__items{
+    margin-bottom:1.3rem;
+}

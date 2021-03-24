@@ -1,0 +1,15 @@
+.heading + .centered__heading{
+    text-align: center;
+}
+
+.sub__heading + .centered__sub__heading{
+    text-align: center;
+}
+
+/* .para + .grey__text{
+    color:rgb(173, 172, 172);
+} */
+
+#grey__text{
+    color:rgb(121, 120, 120);
+}

@@ -1,0 +1,40 @@
+/* Responsive Image */
+
+.round__img{
+    border-radius: 50%;
+}
+/* On screens that are 768px wide or more, apply this */
+@media only screen and (min-width: 768px) {
+.responsive__img{
+    width:384px;
+    height:277px;
+}
+.round__img{
+    width: 200px;
+    height:200px;
+}
+}
+
+/* On screens that are 768px wide or less, make the font size 16px */
+@media screen and (max-width: 768px) {
+    .round__img{
+        width:100px;
+        height:100px;
+    }
+    .responsive__img{
+        width:310px;
+        height:210px;
+    }
+  }
+
+/* On screens that are 600px wide or less, make the font size 16px */
+@media screen and (max-width: 600px) {
+    .round__img{
+        width:80px;
+        height:80px;
+    }
+    .responsive__img{
+        width:250px;
+        height:160px;
+    }
+  }

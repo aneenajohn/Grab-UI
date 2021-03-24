@@ -1,0 +1,126 @@
+.avatars{
+    display: flex;
+    max-width:600px;
+    /* width:400px; */
+    justify-content:space-between;
+    align-items:center;
+    /* border-bottom:1px solid var(--font-color); */
+}
+
+/* Image avatars */
+.avatars>.avatar_small{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+}
+.avatars>.avatar_medium{
+    width:75px;
+    height:75px;
+    border-radius: 50%;
+}
+.avatars>.avatar_large{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+}
+
+/* Alphabetical avatars */
+.aplhabetical__avatars{
+    display: flex;
+    /* width:400px; */
+    max-width:600px;
+    justify-content:space-between;
+    align-items:center; 
+}
+
+.aplhabetical__avatars>.avatar_small{
+    background-color: #80ffdb;
+    width:50px;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+}
+
+.aplhabetical__avatars>.avatar_medium{
+    background-color: #56cfe1;
+    width:75px;
+    height:75px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+    font-size:x-large;
+}
+
+.aplhabetical__avatars>.avatar_large{
+    background-color: #5390d9;
+    width:100px;
+    height:100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+    font-size: xx-large;
+}
+
+/* Badge on avatars */
+.avatar__Badge{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width:600px;
+}
+.badge{
+    height:80px;
+}
+/* top and bottom works only when you have a fixed height */
+.avatar__Badge .avatar_small{
+    width:75px;
+    height:75px;
+    border-radius: 50%;
+}
+.badge_green{
+    position:relative;
+    /* right:77%;
+    top:81%; */
+    left:70%;
+    bottom:20%; 
+    background-color: rgb(23, 189, 23);
+    width:13px;
+    height:13px;
+    border-radius: 50%;
+    border:1.2px solid #fff;
+}
+
+.avatar__Badge .avatar_medium{
+    background-color: #56cfe1;
+    width:75px;
+    height:75px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+} 
+
+.avatar__Badge .badge_dnd{
+    background-color: var(--primary-color);
+    font-weight: bold;
+    color:#edf2f4;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 16px;
+    height:16px;
+    border-radius: 50%;
+    border:1.2px solid #fff;
+    position:relative;
+    left:70%;
+    bottom:20%; 
+}
+
+#circle__badge{
+    border:5px solid red;
+}
+

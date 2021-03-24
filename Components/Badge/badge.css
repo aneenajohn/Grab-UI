@@ -1,0 +1,49 @@
+/* Badge on icons */
+.icon__badge{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width:600px;
+}
+
+/* top/bottom prop of position works only when the parent has height */
+.icon__badge__container{
+    height:70px;
+}
+
+.icon__badge .envelope{
+    background-color: var(--primary-color);
+    color:var(--ow-font-color);
+    padding:5px 10px;
+    border-radius: 50%;
+    border:1px solid var(--ow-font-color);
+    /* clip-path: circle(); */
+    position:relative;
+    right:10%;
+    bottom:57%;
+    
+}
+
+.icon__badge .bell{
+    background-color: var(--ow-font-color);
+    color:var(--primary-color);
+    padding:5px 10px;
+    border-radius: 50%;
+    border:1.5px solid var(--secondary-color);
+    /* color:red; */
+    position:relative;
+    right:30%;
+    bottom:57%;
+}
+
+.icon__badge .cart{
+    background-color: var(--primary-color);
+    color:var(--ow-font-color);
+    padding:5px 10px;
+    border-radius: 50%;
+    border:1.5px solid var(--ow-font-color);
+    /* color:red; */
+    position:relative;
+    right:10%;
+    bottom:52%;
+}
