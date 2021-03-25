@@ -105,3 +105,15 @@
        height:142px;
    }
  }
+
+ /* Mobile screens */
+ @media only screen and (max-width: 768px) {
+      .card{
+         margin-left: 1rem;
+      }
+
+      .card__horizontal{
+         margin-left:1rem;
+      }
+
+ }
