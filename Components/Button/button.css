@@ -13,7 +13,7 @@
 }
 
 .primary__button:hover {
-  color:#fae1dd;
+  background-color: #a5031e;
 }
 .primary__button{
     width:80px;
@@ -26,7 +26,7 @@
     width:9.5rem;
 }
 .secondary__button:hover{
-    color:#e2eafc;
+    background-color: #135ca4;
 }
 .secondary__button{
   background-color: var(--secondary-color);
@@ -41,9 +41,14 @@
 }
 
 .outlined__button>.primary__button{
-  background-color: #fffdfd;
+  /* background-color: #fffdfd; */
+  background-color: #fff5f7;
   color:var(--primary-color);
   border:2px solid var(--primary-color);
+}
+.outlined__button>.primary__button:hover{
+    background-color:var(--primary-color);
+    color:var(--ow-font-color);
 }
 
 .outlined__button>.secondary__button{
@@ -51,6 +56,11 @@
   color:var(--secondary-color);
   border:2px solid var(--secondary-color);
 }
+.outlined__button>.secondary__button:hover{
+    background-color: var(--secondary-color);
+    color:var(--ow-font-color);
+}
+
 
 /* Links */
 .links{
@@ -69,13 +79,18 @@
   color:var(--ow-font-color);
   text-align: center;
 }
+.primary__link:hover {
+  background-color: #a5031e;
+}
 .secondary__link{
   width:9.5rem;
   color:var(--ow-font-color);
   background-color:var(--secondary-color);
   text-align: center;
 }
-
+.secondary__link:hover{
+  background-color: #135ca4;
+}
 /* floting action button */
 .floating__action__button{
  width: 70px;

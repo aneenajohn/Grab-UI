@@ -9,6 +9,11 @@
 @import url("Modal/modal.css");
 @import url("Inputs/input.css");
 @import url("Lists/list.css");
+@import url("Navigation/navigation.css");
+@import url("Modal/modal.css");
+@import url("Rating/rating.css");
+@import url("Grid/grid.css");
+@import url("Typography/typography.css");
 
 *{
     padding:0;
@@ -322,10 +327,10 @@ body{
         padding:3rem;
     }
 
-    iframe{
-        /* max-width: 100%; */
-        /* overflow-x:scroll;
-        overflow-y: scroll; */
-        object-fit:contain;
+    .code__container{
+        max-width: 100%;
+        overflow-x: auto;
+        overflow-y: auto;
+        object-fit: contain;
     }
 }

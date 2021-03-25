@@ -86,3 +86,9 @@
 .closebtn:hover {
     color: black;
   }
+
+  @media only screen and (max-width: 768px) {
+.error__alert,.warning__alert,.info__alert,.success__alert{
+    width:250px;
+}
+}
