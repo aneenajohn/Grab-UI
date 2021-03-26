@@ -52,7 +52,7 @@
   @media only screen and (max-width: 768px) {
     .three__columed__grid{
       display: grid;
-      grid-template-columns: 100px 100px 100px;
+      grid-template-columns: 0.33fr 0.33fr 0.33fr;
       grid-column-gap:10px;
     }
     .grid__item{

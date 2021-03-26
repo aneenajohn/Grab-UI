@@ -44,7 +44,7 @@
 .card__horizontal:hover{
    box-shadow:5px 10px 10px 7px #f1cae2;
 }
-.horiztal__card{
+.horiztal__img{
    width:400px;
    height:300px;
 }
@@ -65,7 +65,8 @@
 .dismiss .closebtn{
    position: absolute;
    bottom:355px;
-   left:380px;
+   /* left:380px; */
+   left:94%;
 }
 .dismiss .closebtn :hover{
    color:var(--primary-color);
@@ -110,10 +111,25 @@
  @media only screen and (max-width: 768px) {
       .card{
          margin-left: 1rem;
+         width:285px;
+      }
+
+      .vert__img{
+         width:285px;
       }
 
       .card__horizontal{
          margin-left:1rem;
+         width: 280px;
+      }
+      .horiztal__img{
+         width: 280px;
       }
 
+      /* .dismiss .closebtn{
+         position: absolute;
+         bottom:355px;
+      
+         left:94%;
+      } */
  }
