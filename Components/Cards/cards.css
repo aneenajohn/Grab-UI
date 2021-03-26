@@ -132,4 +132,10 @@
       
          left:94%;
       } */
+
+      .text__card{
+         margin-left: 1rem;
+         width:280px;
+         height:auto;
+      }
  }
