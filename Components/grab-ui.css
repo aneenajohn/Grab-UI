@@ -131,8 +131,9 @@ body{
     grid-area:navigation;
     position:sticky;
     top:2px;
-    height:520px;
-    overflow:auto;
+    height:527px;
+    overflow-y:auto;
+    overflow-x: hidden;
 }
 /* Scroll Bar */
     .navigation::-webkit-scrollbar {
@@ -333,5 +334,9 @@ body{
         overflow-x: auto;
         overflow-y: auto;
         object-fit: contain;
+    }
+
+    a{
+        outline: none;
     }
 }
