@@ -162,7 +162,7 @@ body{
 }
 
 #nav__components{
-    padding:2rem;
+    padding:2rem 11rem;
     color:var(--font-color);
    
 }
@@ -172,7 +172,8 @@ body{
 } */
 
 #nav__components:hover{
-    color: var(--primary-color);
+    color: var(--ow-font-color);
+    background-color: var(--primary-color);
 }
 
 
