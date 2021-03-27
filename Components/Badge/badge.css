@@ -17,7 +17,6 @@
     padding:5px 10px;
     border-radius: 50%;
     border:1px solid var(--ow-font-color);
-    /* clip-path: circle(); */
     position:relative;
     right:10%;
     bottom:57%;
@@ -52,5 +51,20 @@
 @media only screen and (max-width: 768px) {
     .icon__badge{
         max-width: calc(100vw - 2rem);
+    }
+}
+
+@media only screen and (max-width: 358px) {
+    .icon__badge .envelope{
+        right:-35%;
+        bottom:80%;
+    }
+    .icon__badge .bell{
+        right:-32%;
+        bottom:82%;
+    }
+    .icon__badge .cart{
+        right:-48%;
+        bottom:80%;
     }
 }

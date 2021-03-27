@@ -16,3 +16,21 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
+
+// To add active class to side nav bars
+
+const side__nav__components = document.querySelectorAll("#nav__components");
+console.log(side__nav__components);
+
+side__nav__components.forEach((component) => {
+    component.addEventListener('click', ()=> {
+        removeActiveClasses();
+        component.classList.add('active');
+    })
+})
+
+const removeActiveClasses = () => {
+    side__nav__components.forEach(component => {
+        component.classList.remove('active');
+    })
+}

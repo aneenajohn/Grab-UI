@@ -54,7 +54,7 @@ body{
     grid-template-areas: "header header"
                         "navigation main";
     grid-template-rows: 50px 2fr;
-    grid-template-columns: 270px 4.5fr;
+    grid-template-columns: 230px 4.5fr;
 }
 
 #page .header{
@@ -130,10 +130,11 @@ body{
 #page .navigation{
     grid-area:navigation;
     position:sticky;
-    top:2px;
-    height:527px;
+    top: 2px;
+    height:100vh;
+    width:auto;
     overflow-y:auto;
-    overflow-x: hidden;
+    overflow-x:clip;
 }
 /* Scroll Bar */
     .navigation::-webkit-scrollbar {
@@ -155,29 +156,28 @@ body{
 .nav__components{
     display:flex;
     flex-direction: column;
-    justify-content: center;
-    align-items:center;
+    justify-content:center;
+    align-items:flex-start;
     cursor:pointer;
     padding:2rem;
-   /* border-right:1px solid var(--border-color);    */
+    text-align: left;
 }
 
 #nav__components{
-    padding:2rem 11rem;
+    padding:2rem;
     color:var(--font-color);
-   
+    text-align: left;
 }
-/* 
-.nav_getStarted:hover,.nav_avatar:hover,.nav__badge:hover,.nav__alerts:hover,.nav__button:hover,.nav__cards:hover,.nav__images:hover,.nav__modal:hover{
-    color: var(--primary-color);
-} */
 
 #nav__components:hover{
     color: var(--ow-font-color);
     background-color: var(--primary-color);
 }
 
-
+.nav__components>.active{
+    color: var(--ow-font-color);
+    background-color: var(--primary-color);
+}
 
 #page .main{
     grid-area:main;
@@ -185,7 +185,7 @@ body{
     padding:4rem;
     position:sticky;
     top:2px;
-    height:520px;
+    height:100vh;
     overflow:auto;
 }
 .main::-webkit-scrollbar {
