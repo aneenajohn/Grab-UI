@@ -25,6 +25,7 @@ console.log(side__nav__components);
 side__nav__components.forEach((component) => {
     component.addEventListener('click', ()=> {
         removeActiveClasses();
+        console.log("Removed",component);
         component.classList.add('active');
     })
 })
@@ -32,5 +33,6 @@ side__nav__components.forEach((component) => {
 const removeActiveClasses = () => {
     side__nav__components.forEach(component => {
         component.classList.remove('active');
+
     })
 }
