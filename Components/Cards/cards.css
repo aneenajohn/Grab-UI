@@ -33,6 +33,7 @@
    border-bottom-right-radius: 15px;
    position:absolute;
    bottom:38rem;
+   /* bottom:-80%; */
 }
 
 /* horizontal card with over lay */
@@ -118,6 +119,10 @@
          width:285px;
       }
 
+      .card__badge{
+         bottom:34rem;
+      }
+
       .card__horizontal{
          margin-left:1rem;
          width: 280px;
@@ -138,4 +143,36 @@
          width:280px;
          height:auto;
       }
+ }
+
+
+ @media only screen and (max-width: 340px) {
+   .card{
+      margin-left: 0rem;
+      width:255px;
+   }
+
+   .vert__img{
+      width:255px;
+   }
+
+   .card__badge{
+      bottom:30rem;
+   }
+
+   .card__horizontal{
+      margin-left:0rem;
+      width: 270px;
+      height:380px;
+   }
+
+   .horiztal__img{
+      width: 270px;
+      height:250px;
+   }
+
+   .text__card{
+      margin-left: 0rem;
+      width:270px;
+   }
  }
