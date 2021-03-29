@@ -36,3 +36,20 @@ const removeActiveClasses = () => {
 
     })
 }
+
+// const nameId = document.getElementById("name");
+// const inputlabel=document.getElementById("label");
+// console.log(nameId,inputlabel);
+// function testInput(e) {
+//     nameId.value = e.value;
+//     if (nameId.value !== "") {
+//         inputLabel.style.transform = "translate(15px, -12px) scale(1)";
+//         inputLabel.style.color = "var(--primary-color)";
+//         inputControl.style.border = "1px solid var(--primary-color)";
+//     } else {
+//         inputLabel.style.transform = "translate(15px, 14px) scale(1)";
+//         inputLabel.style.color = "var(--font-color)";
+//         inputControl.style.border = "1px solid var(--font-color)";
+//     }
+// }
+// testInput(e);

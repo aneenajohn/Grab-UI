@@ -169,6 +169,7 @@ body{
     padding:1.5rem 2rem ;
     color:var(--font-color);
     text-align: left;
+    margin:0.3rem;
 }
 
 #nav__components+.active{
