@@ -7,7 +7,7 @@
     margin-left:10rem;
 }
 .card:hover{
-   box-shadow:5px 10px 10px 7px #888888;
+   box-shadow:5px 10px 10px 7px #c2c0c0;
 }
 .card__description{
    margin:0;
@@ -43,7 +43,7 @@
    margin-left:10rem;
 }
 .card__horizontal:hover{
-   box-shadow:5px 10px 10px 7px #f1cae2;
+   box-shadow:5px 10px 10px 7px #fcddf0;
 }
 .card__horizontal__img{
    width:400px;
@@ -69,7 +69,7 @@
    /* left:380px; */
    left:94%;
 }
-.dismiss .closebtn :hover{
+.dismiss .closebtn:hover{
    color:var(--primary-color);
 }
 
@@ -83,10 +83,10 @@
    margin-left:10rem;
 }
 
-.text__content>h3{
+.text__card__content>h3{
    padding:1rem 0;
 }
-.text__content>h4{
+.ttext__card__content>h4{
    padding-bottom:1rem;
 }
 
@@ -162,12 +162,12 @@
 
    .card__horizontal{
       margin-left:0rem;
-      width: 270px;
+      width: 255px;
       height:380px;
    }
 
    .card__horizontal__img{
-      width: 270px;
+      width: 255px;
       height:250px;
    }
 
