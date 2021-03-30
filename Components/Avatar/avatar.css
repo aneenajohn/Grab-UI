@@ -8,17 +8,17 @@
 }
 
 /* Image avatars */
-.avatars>.avatar_small{
+.avatars>.avatar--small{
     width:50px;
     height:50px;
     border-radius: 50%;
 }
-.avatars>.avatar_medium{
+.avatars>.avatar--medium{
     width:75px;
     height:75px;
     border-radius: 50%;
 }
-.avatars>.avatar_large{
+.avatars>.avatar--large{
     width:100px;
     height:100px;
     border-radius: 50%;
@@ -33,7 +33,7 @@
     align-items:center; 
 }
 
-.aplhabetical__avatars>.avatar_small{
+.aplhabetical__avatars>.aplhabetical__avatars--small{
     background-color: #80ffdb;
     width:50px;
     height:50px;
@@ -43,7 +43,7 @@
     border-radius:50%;
 }
 
-.aplhabetical__avatars>.avatar_medium{
+.aplhabetical__avatars>.aplhabetical__avatars--medium{
     background-color: #56cfe1;
     width:75px;
     height:75px;
@@ -54,7 +54,7 @@
     font-size:x-large;
 }
 
-.aplhabetical__avatars>.avatar_large{
+.aplhabetical__avatars>.aplhabetical__avatars--large{
     background-color: #5390d9;
     width:100px;
     height:100px;
@@ -66,22 +66,22 @@
 }
 
 /* Badge on avatars */
-.avatar__Badge{
+.avatar__badge{
     display:flex;
     justify-content: space-between;
     align-items: center;
     max-width:600px;
 }
-.badge{
+.avatar__badge__container{
     height:80px;
 }
 /* top and bottom works only when you have a fixed height */
-.avatar__Badge .avatar_small{
+.avatar__badge .avatar__badge--small{
     width:75px;
     height:75px;
     border-radius: 50%;
 }
-.badge_green{
+.avatar__badge--green{
     position:relative;
     /* right:77%;
     top:81%; */
@@ -94,7 +94,7 @@
     border:1.2px solid #fff;
 }
 
-.avatar__Badge .avatar_medium{
+.avatar__badge .avatar__badge--medium{
     background-color: #56cfe1;
     width:75px;
     height:75px;
@@ -104,7 +104,7 @@
     border-radius:50%;
 } 
 
-.avatar__Badge .badge_dnd{
+.avatar__badge__container .avatar__badge__dnd{
     background-color: var(--primary-color);
     font-weight: bold;
     color:#edf2f4;
@@ -120,12 +120,12 @@
     bottom:20%; 
 }
 
-#circle__badge{
+.avatar__badge--circle{
     border:5px solid red;
 }
 
 @media only screen and (max-width: 768px) {
-    .avatars,.aplhabetical__avatars,.avatar__Badge{
+    .avatars,.aplhabetical__avatars,.avatar__badge{
         max-width: calc(100vw - 2rem);
     }
 }

@@ -1,5 +1,5 @@
 /* Badge on icons */
-.icon__badge{
+.iconBadge{
     display: flex;
     justify-content:space-between;
     align-items:center;
@@ -7,11 +7,11 @@
 }
 
 /* top/bottom prop of position works only when the parent has height */
-.icon__badge__container{
+.iconBadge__container{
     height:70px;
 }
 
-.icon__badge .envelope{
+.iconBadge .iconBadge__container__envelope{
     background-color: var(--primary-color);
     color:var(--ow-font-color);
     padding:5px 10px;
@@ -23,7 +23,7 @@
     
 }
 
-.icon__badge .bell{
+.iconBadge .iconBadge__container__bell{
     background-color: var(--ow-font-color);
     color:var(--primary-color);
     padding:5px 10px;
@@ -35,7 +35,11 @@
     bottom:57%;
 }
 
-.icon__badge .cart{
+.fa-bell{
+    color:#d90429
+}
+
+.iconBadge .iconBadge__container__cart{
     background-color: var(--primary-color);
     color:var(--ow-font-color);
     padding:5px 10px;
@@ -49,21 +53,21 @@
 
 
 @media only screen and (max-width: 768px) {
-    .icon__badge{
+    .iconBadge{
         max-width: calc(100vw - 2rem);
     }
 }
 
 @media only screen and (max-width: 358px) {
-    .icon__badge .envelope{
+    .iconBadge .iconBadge__container__envelope{
         right:-35%;
         bottom:80%;
     }
-    .icon__badge .bell{
+    .iconBadge .iconBadge__container__bell{
         right:-32%;
         bottom:82%;
     }
-    .icon__badge .cart{
+    .iconBadge .iconBadge__container__cart{
         right:-48%;
         bottom:80%;
     }

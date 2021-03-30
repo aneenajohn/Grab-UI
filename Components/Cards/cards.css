@@ -17,15 +17,15 @@
    /* background-color:rgb(199, 247, 199); */
 }
 
-.details{
+.card__description__details{
     color:var(--primary-color);
 }
 
 /* card badge */
-.badge__container{
+.card__badge{
     position: relative;
 }
-.card__badge{
+.card__badge__text{
    background-color: rgb(236, 213, 213);
    display:inline-block;
    padding:5px 10px;
@@ -45,14 +45,14 @@
 .card__horizontal:hover{
    box-shadow:5px 10px 10px 7px #f1cae2;
 }
-.horiztal__img{
+.card__horizontal__img{
    width:400px;
    height:300px;
 }
 .card__overlay{
    position:relative;
 }
-.overlay__text{
+.card__overlay__text{
    position:absolute;
    bottom:130px;
    left:30px;
@@ -115,11 +115,11 @@
          width:285px;
       }
 
-      .vert__img{
+      .card__vertImg{
          width:285px;
       }
 
-      .card__badge{
+      .card__badge__text{
          bottom:34rem;
       }
 
@@ -127,7 +127,7 @@
          margin-left:1rem;
          width: 280px;
       }
-      .horiztal__img{
+      .card__horizontal__img{
          width: 280px;
       }
 
@@ -152,11 +152,11 @@
       width:255px;
    }
 
-   .vert__img{
+   .card__vertImg{
       width:255px;
    }
 
-   .card__badge{
+   .card__badge__text{
       bottom:30rem;
    }
 
@@ -166,7 +166,7 @@
       height:380px;
    }
 
-   .horiztal__img{
+   .card__horizontal__img{
       width: 270px;
       height:250px;
    }

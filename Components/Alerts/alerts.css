@@ -1,7 +1,7 @@
 /* Alerts */
 
 /* Error alert */
-.error__alert{
+.alerts__error{
     display: flex;
     justify-content: space-between;
     align-items:center;
@@ -14,13 +14,13 @@
     border-left:4px solid rgb(97, 26, 21);
     /* border:3px solid rgb(97, 26, 21); */
 }
-.error__icon{
+.alerts__error__icon{
     fill:#f44336;
     width:2em;
     height:2em;
 }
 /* Warning Alert */
-.warning__alert{
+.alerts__warning{
     display: flex;
     justify-content: space-between;
     align-items:center;
@@ -31,13 +31,13 @@
     width:500px;
     border-left:4px solid rgb(102 60 0);
 }
-.warning__icon{
+.alerts__warning__icon{
     fill:#ff9800;
     width:2em;
     height:2em;
 }
 /* Info Alert */
-.info__alert{
+.alerts__info{
     display: flex;
     justify-content: space-between;
     align-items:center;
@@ -48,13 +48,13 @@
     width:500px; 
     border-left: 4px solid rgb(13, 60, 97) ;
 }
-.info__icon >svg{
+.alerts__info__icon >svg{
     fill:#2196f3;
     width:2em;
     height:2em;
 }
 /* Success Alert */
-.success__alert{
+.alerts__success{
     display: flex;
     justify-content: space-between;
     align-items:center;
@@ -64,7 +64,7 @@
     width:500px;
     border-left: 4px solid #4caf50;
 }
-.success__icon>svg{
+.alerts__success__icon>svg{
     fill:#4caf50;
     width:2em;
     height:2em;
@@ -73,7 +73,7 @@
 .info{
     padding: 8px 0;
 }
-.msg{
+.info__msg{
     margin-top:5px;
 }
 .closebtn{
@@ -88,7 +88,7 @@
   }
 
   @media only screen and (max-width: 768px) {
-.error__alert,.warning__alert,.info__alert,.success__alert{
+.alerts__error,.alerts__warning,.alerts__info,.alerts__success{
     width:250px;
 }
 }
