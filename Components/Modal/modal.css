@@ -1,5 +1,5 @@
 /* Modal */
-#openBtn{
+/* #openBtn{
     padding:1rem;
     background-color: var(--ow-font-color);
     color:var(--primary-color);
@@ -10,7 +10,7 @@
 #openBtn:hover{
     color:var(--secondary-color);
     cursor:pointer;
-}
+} */
 .modal {
     display: none;
     position: fixed;
