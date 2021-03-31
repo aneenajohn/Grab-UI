@@ -8,7 +8,7 @@
     <title>Grab UI</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../grab-ui.css">
-    <link rel="stylesheet" href="../Rating/rating.css">
+    <link rel="stylesheet" href="toast.css">
     <link rel="icon" href="/Logos/favi_logo.png" type="image/gif" sizes="16x16">
 </head>
 
@@ -28,8 +28,7 @@
                         <a href="../get_started.html" class="nav__link">Get Started</a>
                     </li>
                     <li class="nav__item mobile__menu">
-                        <a href="../Avatar/avatar.html"
-                        class="nav__link">Avatar</a>
+                        <a href="../Avatar/avatar.html" class="nav__link">Avatar</a>
                     </li>
                     <li class="nav__item mobile__menu">
                         <a href="../Badge/badge.html" class="nav__link">Badge</a>
@@ -44,10 +43,10 @@
                         <a class="nav__link" href="../Cards/cards.html">Cards</a>
                     </li>
                     <li class="nav__item mobile__menu">
-                        <a  class="nav__link" href="../Images/images.html">Images</a>
+                        <a class="nav__link" href="../Images/images.html">Images</a>
                     </li>
                     <li class="nav__item mobile__menu">
-                        <a   class="nav__link" href="../Inputs/input.html">Input</a>
+                        <a class="nav__link" href="../Inputs/input.html">Input</a>
                     </li>
                     <li class="nav__item mobile__menu">
                         <a class="nav__link" href="../Lists/list.html">List</a>
@@ -56,22 +55,22 @@
                         <a class="nav__link" href="../Navigation/navigation.html">Navigation</a>
                     </li>
                     <li class="nav__item mobile__menu">
-                        <a  class="nav__link" href="../Modal/modal.html">Modal</a>
+                        <a class="nav__link" href="../Modal/modal.html">Modal</a>
                     </li>
                     <li class="nav__item mobile__menu">
-                        <a  class="nav__link" href="../Rating/rating.html">Rating</a>
+                        <a class="nav__link" href="../Rating/rating.html">Rating</a>
                     </li>
                     <li class="nav__item mobile__menu">
-                        <a  class="nav__link" href="../Grid/grid.html">Grid</a>
+                        <a class="nav__link" href="../Grid/grid.html">Grid</a>
                     </li>
                     <li class="nav__item mobile__menu">
-                        <a  class="nav__link" href="../Typography/typography.html">Typography</a>
-                    </li>
-                    <li class="nav__item mobile__menu">
-                        <a  class="nav__link" href="../Toast/toast.html">Toast</a>
+                        <a class="nav__link" href="../Typography/typography.html">Typography</a>
                     </li>
                     <li class="nav__item">
                         <a href="/index.html#contact" class="nav__link">Contact</a>
+                    </li>
+                    <li class="nav__item mobile__menu">
+                        <a  class="nav__link" href="../Toast/toast.html">Toast</a>
                     </li>
                 </ul>
                 <div class="hamburger">
@@ -90,49 +89,44 @@
                 <a id="nav__components" class="nav__button" href="../Button/button.html">Button</a>
                 <a id="nav__components" class="nav__cards" href="../Cards/cards.html">Cards</a>
                 <a id="nav__components" class="nav__images" href="../Images/images.html">Images</a>
-                <a id="nav__components"  class="nav__input" href="../Inputs/input.html">Input</a>
-                <a id="nav__components"  class="nav__list" href="../Lists/list.html">List</a>
-                <a id="nav__components"  class="nav__navigation" href="../Navigation/navigation.html">Navigation</a>
-                <a id="nav__components"  class="nav__modal" href="../Modal/modal.html">Modal</a>
-                <a id="nav__components"  class="nav__rating active" href="../Rating/rating.html">Rating</a>
-                <a id="nav__components"  class="nav__grids" href="../Grid/grid.html">Grid</a>
-                <a id="nav__components"  class="nav__typography" href="../Typography/typography.html">Typography</a>
-                <a id="nav__components"  class="nav__toast" href="../Toast/toast.html">Toast</a>
+                <a id="nav__components" class="nav__input" href="../Inputs/input.html">Input</a>
+                <a id="nav__components" class="nav__list" href="../Lists/list.html">List</a>
+                <a id="nav__components" class="nav__navigation" href="../Navigation/navigation.html">Navigation</a>
+                <a id="nav__components" class="nav__modal" href="../Modal/modal.html">Modal</a>
+                <a id="nav__components" class="nav__rating" href="../Rating/rating.html">Rating</a>
+                <a id="nav__components" class="nav__grids" href="../Grid/grid.html">Grid</a>
+                <a id="nav__components" class="nav__typography" href="../Typography/typography.html">Typography</a>
+                <a id="nav__components"  class="nav__toast active" href="../Toast/toast.html">Toast</a>
             </div>
         </nav>
         <main class="main">
             <div class="main__components">
                 <div class="components">
-                    <h1 class="heading" id="comp__avatar">Rating</h1>
-                    <p class="para__lead">Product ratings are the star ratings that customers give to your products.
+                    <h1 class="heading" id="comp__avatar">Toast</h1>
+                    <p class="para__lead">Toast serves as a feedback & confirmation mechanism after the user takes an
+                        action.
                     </p>
-                    <h2 class="sub__heading">Simple Rating</h2>
-                    <p class="para">Product Rating is a fantastic way to show the popularity of your product or service and encourage customers to purchase these items.</p>
-                    <br />
-                    <div class="rating">
-                        <div class="stars">
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <h2 class="sub__heading">Sample Toast</h2>
+                    <p class="para"></p>
+                    <div class="button">
+                        <div class="button__btn button__primary" onclick="showToast()">
+                            View Toast
                         </div>
-                        <div class="rating__count">2534 ratings</div>
                     </div>
-                    <br />
-                    <br />
+                    <div id="toast" class="toast">Toast content goes here...</div>
                     <div class="code__container">
                         <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28196%2C210%2C221%2C1%29&t=paraiso-dark&wt=sharp&l=htmlmixed&ds=true&dsyoff=20px&dsblur=54px&wc=true&wa=false&pv=3px&ph=1px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=95%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522rating%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stars%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star-half-o%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-star-o%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522rating__count%2522%253E2534%2520ratings%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-                        style="width: 676px; height: 207px; border:0; transform: scale(1); overflow:hidden;"
+                        src="https://carbon.now.sh/embed?bg=rgba%28196%2C210%2C221%2C1%29&t=paraiso-dark&wt=sharp&l=htmlmixed&ds=true&dsyoff=20px&dsblur=54px&wc=true&wa=false&pv=3px&ph=1px&ln=false&fl=1&fm=Hack&fs=13.5px&lh=95%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522button%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522button__btn%2520button__primary%2522%250A%2520%2520%2520%2520%2509%2520onclick%253D%2522showToast%28%29%2522%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520View%2520Toast%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520id%253D%2522toast%2522%2520class%253D%2522toast%2522%253EToast%2520content%2520goes%2520here...%253C%252Fdiv%253E"
+                        style="width: 676px; height: 169px; border:0; transform: scale(1); overflow:hidden;"
                         sandbox="allow-scripts allow-same-origin">
-                    </iframe>
+                        </iframe>
                     </div>
                 </div>
             </div>
         </main>
     </section>
 </body>
+<script src="./toast.js"></script>
 <script src="/grab-ui.js"></script>
 
 </html>

@@ -19,37 +19,21 @@ function closeMenu() {
 
 // To add active class to side nav bars
 
-const side__nav__components = document.querySelectorAll("#nav__components");
-console.log(side__nav__components);
+// const side__nav__components = document.querySelectorAll("#nav__components");
+// console.log(side__nav__components);
 
-side__nav__components.forEach((component) => {
-    component.addEventListener('click', ()=> {
-        removeActiveClasses();
-        console.log("Removed",component);
-        component.classList.add('active');
-    })
-})
+// side__nav__components.forEach((component) => {
+//     component.addEventListener('click', ()=> {
+//         removeActiveClasses();
+//         console.log("Removed",component);
+//         component.classList.add('active');
+//     })
+// })
 
-const removeActiveClasses = () => {
-    side__nav__components.forEach(component => {
-        component.classList.remove('active');
+// const removeActiveClasses = () => {
+//     side__nav__components.forEach(component => {
+//         component.classList.remove('active');
 
-    })
-}
-
-// const nameId = document.getElementById("name");
-// const inputlabel=document.getElementById("label");
-// console.log(nameId,inputlabel);
-// function testInput(e) {
-//     nameId.value = e.value;
-//     if (nameId.value !== "") {
-//         inputLabel.style.transform = "translate(15px, -12px) scale(1)";
-//         inputLabel.style.color = "var(--primary-color)";
-//         inputControl.style.border = "1px solid var(--primary-color)";
-//     } else {
-//         inputLabel.style.transform = "translate(15px, 14px) scale(1)";
-//         inputLabel.style.color = "var(--font-color)";
-//         inputControl.style.border = "1px solid var(--font-color)";
-//     }
+//     })
 // }
-// testInput(e);
+

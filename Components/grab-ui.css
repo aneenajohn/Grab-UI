@@ -15,6 +15,7 @@
 @import url("Rating/rating.css");
 @import url("Grid/grid.css");
 @import url("Typography/typography.css");
+@import url("Toast/toast.css");
 
 *{
     padding:0;
@@ -166,10 +167,15 @@ body{
 }
 
 #nav__components{
-    padding:1.5rem 2rem ;
+    /* padding:1.5rem 30%; */
+
+    /* padding:1.5rem 6rem 1.5rem 4rem; */
+    /* padding: 2px 1px 1px 16px; */
+    width:100%;
     color:var(--font-color);
     text-align: left;
     margin:0.3rem;
+    padding:1.5rem 1rem 1.5rem 1rem;
 }
 
 #nav__components+.active{
@@ -178,10 +184,14 @@ body{
 }
 #nav__components:hover{
     color: var(--ow-font-color);
-    background-color: var(--primary-color);
+    background-color: #fdaab8;
+    box-sizing: border-box;
+    border-left: 3px solid var(--primary-color);
 }
-
-
+.nav_getStarted + .active{
+    background-color: var(--primary-color);
+    color: var(--ow-font-color);
+}
 
 #page .main{
     grid-area:main;
@@ -287,6 +297,12 @@ body{
     .nav__item + .desktop__menu{
         display:none;
     }
+
+    .nav__item::selection {
+        background-color: var(--primary-color);
+        color: var(--ow-font-color);
+    }
+
 
     .nav__menu::-webkit-scrollbar {
         display: none; /*Chrome, Safari and Opera */

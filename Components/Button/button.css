@@ -16,14 +16,16 @@
   background-color: #a5031e;
 }
 .button__primary{
-    width:80px;
+    /* width:80px; */
+    width: fit-content;
     background-color: var(--primary-color);
     color:var(--ow-font-color);
     text-align: center;
 }
 
 .button__btn +.button__secondary{
-    width:9.5rem;
+    /* width:9.5rem; */
+    width: fit-content;
 }
 .button__secondary:hover{
     background-color: #135ca4;
@@ -96,7 +98,8 @@
   cursor:pointer;
 }
 .links__primary{
-  width:80px;
+  /* width:80px; */
+  width: fit-content;
   background-color: var(--primary-color);
   color:var(--ow-font-color);
   text-align: center;
@@ -105,7 +108,8 @@
   background-color: #a5031e;
 }
 .links__secondary{
-  width:9.5rem;
+  /* width:9.5rem; */
+  width: fit-content;
   color:var(--ow-font-color);
   background-color:var(--secondary-color);
   text-align: center;
