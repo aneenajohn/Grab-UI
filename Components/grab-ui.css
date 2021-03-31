@@ -208,6 +208,7 @@ body{
     top:2px;
     height:100vh;
     overflow:auto;
+    text-align: justify;
 }
 .main::-webkit-scrollbar {
     display: none; /*Chrome, Safari and Opera */
