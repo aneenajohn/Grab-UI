@@ -188,7 +188,7 @@ body{
     box-sizing: border-box;
     border-left: 3px solid var(--primary-color);
 }
-.nav_getStarted + .active{
+#nav__components+.showActive{
     background-color: var(--primary-color);
     color: var(--ow-font-color);
 }
