@@ -29,11 +29,17 @@
     --background-color:#fff5f7;
     --ow-font-color:#fff5f7;
     --font-color:#320109;
+
+    --fs-h1:calc(1.425rem + 2.1vw);
+    --fs-h2:calc(1.375rem + 1.5vw);
+    --fs-h3:calc(1.325rem + 0.9vw);
+    --fs-h4:calc(1.3rem + .6vw);
+    --fs-h5:calc(1.275rem + .3vw);
+    --fs-h6:1.25rem;
 }
 html {
     font-size: 62.5%;
-    font-family: 'Roboto', sans-serif;
-    
+    font-family: 'Roboto', sans-serif;   
 }
 
 li{
@@ -48,6 +54,7 @@ body{
     background-color: var(--background-color);
     color:var(--font-color);
 }
+
 
 #page{
     display: grid;
@@ -220,8 +227,8 @@ body{
 .heading{
     font-family: 'Sora',sans-serif ;
     font-weight:800;
-    font-size: calc(1.425rem + 2.1vw);
     padding:1rem 0 ;
+    font-size: var(--fs-h1);
 }
 
 .sub__heading{
@@ -238,6 +245,7 @@ body{
     font-weight: 400;
     line-height: 1.5;
     font-size: calc(1.275rem + .3vw);
+    
 }
 
 .para__lead{
@@ -283,12 +291,6 @@ body{
         height:100vh;
         overflow: auto;
     }
-
-    /* .nav__item:hover{
-        background:#fa143a;
-        color:#fff5f7;
-        padding:2rem;
-    } */
 
     .nav__item + .mobile__menu{
         display:inherit;
