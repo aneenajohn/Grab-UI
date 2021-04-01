@@ -1,7 +1,6 @@
 /* Cards */
 /* Vertical Card */
 .card{
-    /* border:1px solid black; */
     width:315px;
     height:500px;
     margin-left:10rem;
@@ -9,15 +8,13 @@
 .card:hover{
    box-shadow:5px 10px 10px 7px #c2c0c0;
 }
-.card__description{
+.card__desc{
    margin:0;
    padding:1rem 2rem;
    background: #e7e4e4;
-   /* background-color: #bed8f1; */
-   /* background-color:rgb(199, 247, 199); */
 }
 
-.card__description__details{
+.card__details{
     color:var(--primary-color);
 }
 
@@ -25,7 +22,7 @@
 .card__badge{
     position: relative;
 }
-.card__badge__text{
+.card__label{
    background-color: rgb(236, 213, 213);
    display:inline-block;
    padding:5px 10px;
@@ -37,22 +34,22 @@
 }
 
 /* horizontal card with over lay */
-.card__horizontal{
+.card-hori{
    width: 400px;
    height:380px;
    margin-left:10rem;
 }
-.card__horizontal:hover{
+.card-hori:hover{
    box-shadow:5px 10px 10px 7px #fcddf0;
 }
-.card__horizontal__img{
+.card-hori__img{
    width:400px;
    height:300px;
 }
-.card__overlay{
+.card-hori__overlay{
    position:relative;
 }
-.card__overlay__text{
+.card-hori__text{
    position:absolute;
    bottom:130px;
    left:30px;
@@ -74,7 +71,7 @@
 }
 
 /* Text only card */
-.text__card{
+.text-card{
    width:40rem;
    height:20rem;
    padding:2rem;
@@ -83,26 +80,26 @@
    margin-left:10rem;
 }
 
-.text__card__content>h3{
+.text-card__content>h3{
    padding:1rem 0;
 }
-.ttext__card__content>h4{
+.text-card__content>h4{
    padding-bottom:1rem;
 }
 
 /* Responsive Image */
 /* On screens that are 768px wide or more, apply this */
-.round__img{
+.rounded-img{
    border-radius: 50%;
 }
 @media only screen and (min-width: 768px) {
-.responsive__img{
+.image{
    width:384px;
    height:277px;
 }}
 
 @media screen and (max-width: 768px) {
-   .round__img{
+   .rounded-img{
        width:142px;
        height:142px;
    }
@@ -115,19 +112,19 @@
          width:285px;
       }
 
-      .card__vertImg{
+      .card__img{
          width:285px;
       }
 
-      .card__badge__text{
+      .card__label{
          bottom:34rem;
       }
 
-      .card__horizontal{
+      .card-hori{
          margin-left:1rem;
          width: 280px;
       }
-      .card__horizontal__img{
+      .card-hori__img{
          width: 280px;
       }
 
@@ -138,7 +135,7 @@
          left:94%;
       } */
 
-      .text__card{
+      .text-card{
          margin-left: 1rem;
          width:280px;
          height:auto;
@@ -152,26 +149,26 @@
       width:255px;
    }
 
-   .card__vertImg{
+   .card__img{
       width:255px;
    }
 
-   .card__badge__text{
+   .card__label{
       bottom:30rem;
    }
 
-   .card__horizontal{
+   .card-hori{
       margin-left:0rem;
       width: 255px;
       height:380px;
    }
 
-   .card__horizontal__img{
+   .card-hori__img{
       width: 255px;
       height:250px;
    }
 
-   .text__card{
+   .text-card{
       margin-left: 0rem;
       width:270px;
    }

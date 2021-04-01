@@ -1,10 +1,10 @@
 /* Button */
 /* Contained Button */
-.button{
+.btn__container{
     display: flex;
     align-items: center;
 }
-.button__btn{
+.btn{
   padding:1rem;
   border-radius: 5px;
   margin-left:3rem;
@@ -12,10 +12,10 @@
   box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
 }
 
-.button__primary:hover {
+.btn--primary:hover {
   background-color: #a5031e;
 }
-.button__primary{
+.btn--primary{
     /* width:80px; */
     width: fit-content;
     background-color: var(--primary-color);
@@ -23,8 +23,8 @@
     text-align: center;
 }
 
-.button__btn +.button__secondary{
-    /* width:9.5rem; */
+/* If you need blue clr secondary use this */
+/* .button__btn +.button__secondary{
     width: fit-content;
 }
 .button__secondary:hover{
@@ -34,88 +34,82 @@
   background-color: var(--secondary-color);
   color:var(--ow-font-color);
   text-align: center;
-}
+} */
 
-
-/* outlined secondary */
-.button .outlinedButton__btn{
-  padding:0.8rem;
-}
-.outlinedButton__primary{
-  /* background-color: #fffdfd; */
+.btn--secondary{
   background-color: #fff5f7;
   color:var(--primary-color);
   border:2px solid var(--primary-color);
+  box-sizing: border-box;
+  padding:0.8rem;
 }
-.outlinedButton__primary:hover{
+.btn--secondary:hover{
   background-color:var(--primary-color);
   color:var(--ow-font-color);
 }
 /* outlined__button */
-.outlinedButton{
+/* .btn-outlined{
   display: flex;
   align-items: center;
-}
+} */
 
-.outlinedButton__btn{
+.btn-outlined{
   padding:1rem;
   border-radius: 5px;
   margin-left:3rem;
   cursor:pointer;
+  box-sizing: border-box;
   box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
 }
-.outlinedButton>.outlinedButton__primary{
-  /* background-color: #fffdfd; */
+.btn-outlined.btn-outlined--primary{
   background-color: #fff5f7;
   color:var(--primary-color);
   border:2px solid var(--primary-color);
 }
-.outlinedButton>.outlinedButton__primary:hover{
+.btn-outlined.btn-outlined--primary:hover{
     background-color:var(--primary-color);
     color:var(--ow-font-color);
 }
 
-.outlinedButton>.outlinedButton__secondary{
+.btn-outlined.btn-outlined--secondary{
   background-color: #e2eafc;
   color:var(--secondary-color);
   border:2px solid var(--secondary-color);
 }
-.outlinedButton>.outlinedButton__secondary:hover{
+.btn-outlined.btn-outlined--secondary:hover{
     background-color: var(--secondary-color);
     color:var(--ow-font-color);
 }
 
 
 /* Links */
-.links{
-  display: flex;
-  align-items:center;
-}
-.links__link{
+
+.btn-link{
   padding:1rem;
   border-radius: 5px; 
   margin-left:3rem;
   cursor:pointer;
 }
-.links__primary{
+.btn-link--primary{
   /* width:80px; */
   width: fit-content;
   background-color: var(--primary-color);
   color:var(--ow-font-color);
   text-align: center;
 }
-.links__primary:hover {
+.btn-link--primary:hover {
   background-color: #a5031e;
 }
-.links__secondary{
-  /* width:9.5rem; */
-  width: fit-content;
-  color:var(--ow-font-color);
-  background-color:var(--secondary-color);
-  text-align: center;
+.btn-link--secondary{
+  background-color: #fff5f7;
+  color:var(--primary-color);
+  border:2px solid var(--primary-color);
+  box-sizing: border-box;
+  padding:0.8rem;
 }
-.links__secondary:hover{
-  background-color: #135ca4;
+.btn-link--secondary:hover{
+  background-color:var(--primary-color);
+  color:var(--ow-font-color);
 }
 /* floting action button */
 .fab__icon{

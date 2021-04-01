@@ -4,11 +4,11 @@
     font-weight:800;
     padding:1rem 0 ;
 }
-.heading + .centered__heading{
+.heading + .heading--center{
     text-align: center;
 }
 
-.sub__heading + .centered__sub__heading{
+.heading--sub + .heading--center{
     text-align: center;
 }
 
@@ -16,8 +16,9 @@
     color:rgb(173, 172, 172);
 } */
 
-#grey__text{
-    color:rgb(121, 120, 120);
+.para--grey{
+    color:rgb(114, 113, 113);
+    /* color:grey; */
 }
 .fs-h1{
     font-size: var(--fs-h1);

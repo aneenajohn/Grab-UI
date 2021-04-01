@@ -73,7 +73,8 @@ body{
     background-color: var(--primary-color);
     color:var(--font-color);
     width:100% ;
-    /* color: var(--font-color); */
+    position: fixed;
+    z-index: 1;
 }
 
 .navbar{
@@ -138,13 +139,16 @@ body{
 }
 
 #page .navigation{
+    margin-top: 49px;
     grid-area:navigation;
-    position:sticky;
-    top: 2px;
-    height:100vh;
-    width:auto;
+    /* position:sticky;
+    top: 2px; */
+    height:calc(100vh - 50px);
+   /* to balance the margin top subtract 50px from 100vh */
+    width:fit-content;
     overflow-y:auto;
     overflow-x:clip;
+    position: fixed;
 }
 /* Scroll Bar */
     .navigation::-webkit-scrollbar {
@@ -171,13 +175,10 @@ body{
     cursor:pointer;
     padding:2rem;
     text-align: left;
+    width:max-content;
 }
 
 #nav__components{
-    /* padding:1.5rem 30%; */
-
-    /* padding:1.5rem 6rem 1.5rem 4rem; */
-    /* padding: 2px 1px 1px 16px; */
     width:100%;
     color:var(--font-color);
     text-align: left;
@@ -204,11 +205,12 @@ body{
     grid-area:main;
     max-width:100%;
     padding:4rem;
-    position:sticky;
-    top:2px;
     height:100vh;
-    overflow:auto;
     text-align: justify;
+    margin-bottom: 3rem;
+    /* position:sticky; */
+    /* top:2px; */
+        /* overflow:auto; */
 }
 .main::-webkit-scrollbar {
     display: none; /*Chrome, Safari and Opera */
@@ -232,7 +234,7 @@ body{
     font-size: var(--fs-h1);
 }
 
-.sub__heading{
+.heading--sub{
     font-family: 'Sora',sans-serif ;
     font-size: calc(1.325rem + .9vw);
     padding:1rem 0 ;
@@ -242,14 +244,12 @@ body{
 }
 .para{
     padding:1rem 0;
-    /* font-size: 1rem; */
     font-weight: 400;
     line-height: 1.5;
     font-size: calc(1.275rem + .3vw);
-    
-}
+ }
 
-.para__lead{
+.para--lead{
     padding:1rem 0;
     font-weight: 400;
     line-height: 1.5;
@@ -259,10 +259,16 @@ body{
 .code{
     color: #813fd6;
 }
+
+.code__container{
+    margin: 3rem;
+}
+
 /* Footer */
 #page .footer{
     grid-area:footer;
 }
+
 
 /* Mobile view */
 @media only screen and (max-width: 768px) {
@@ -359,6 +365,7 @@ body{
         overflow-x: auto;
         overflow-y: auto;
         object-fit: contain;
+        margin:2rem;
     }
 
     a{

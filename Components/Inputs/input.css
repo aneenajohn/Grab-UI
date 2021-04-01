@@ -1,8 +1,8 @@
-.input{
+/* ..form__input{
     position:relative;
 }
 
-.input__form{
+..form__input__form{
     height:4rem;
     outline: none;
     border:1px solid #8a8787;
@@ -11,7 +11,7 @@
     cursor: pointer;
 }
 
-label{
+.form__label{
     position: absolute;
     left:2%;
     top:25%;
@@ -20,13 +20,13 @@ label{
     transition: all 0.4s ease-in-out;
  }
 
- .input__form:focus ~ label{
+ ..form__input__form:focus ~ .form__label{
     color:#FFFF;
     border: 2px solid var(--primary-color);
 } 
 
 
-.input__form:valid ~ label{
+..form__input__form:valid ~ .form__label{
   top:-20%;
   padding: 0 0.45rem;
   color: var(--primary-color);
@@ -34,7 +34,7 @@ label{
   border-radius:2px;
   outline: none;
   font-size: 1.3rem;
-}
+} */
 
 input[name=email]{
     width:inherit;
@@ -45,11 +45,11 @@ input[name=email]:focus,input[name=email]:valid{
     width:300px;
 }
 
-.input__group{
+.form{
     position: relative;
 }
 
-input{
+.form__input{
     font-size:18px;
     padding:10px 10px 10px 5px;
     display:block;
@@ -57,12 +57,12 @@ input{
     border:1px solid #8a8787;
     border-radius: 5px;
 }
-input:focus{ 
+.form__input:focus{ 
     outline:none; 
     border: 1px solid var(--primary-color);
 }
 
-label  {
+.form__label  {
     color:#999; 
     font-size:15px;
     font-weight:normal;
@@ -76,11 +76,11 @@ label  {
     -webkit-transition: all 0.3s ease-in-out;
   }
 
-  input:focus ~ label{
+  .form__input:focus ~ .form__label{
       color:var(--primary-color);
   }
 
-  input:focus ~ label, input:valid ~ label {
+  .form__input:focus ~ .form__label, .form__input:valid ~ .form__label {
     top:-20%;
     padding: 0 0.45rem;
     font-size:14px;
