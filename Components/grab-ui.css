@@ -64,7 +64,7 @@ body{
     grid-template-areas: "header header"
                         "navigation main";
     grid-template-rows: 50px 2fr;
-    grid-template-columns: 230px 4.5fr;
+    grid-template-columns: 190px 4.5fr;
 }
 
 #page .header{
@@ -210,7 +210,7 @@ body{
     margin-bottom: 3rem;
     /* position:sticky; */
     /* top:2px; */
-    overflow:auto;
+    /* overflow:auto; */
 }
 .main::-webkit-scrollbar {
     display: none; /*Chrome, Safari and Opera */
@@ -362,11 +362,9 @@ body{
     #page .main{
         box-sizing: border-box;
         width: 100vw;
-        /* height:calc(100vh - 50px); */
         padding:0rem;
         margin-bottom: 0rem;
-        overflow:none;
-        /* height:calc(100vh - 50px); */
+        overflow:auto;
     }
     .main__components{
         box-sizing: border-box;
