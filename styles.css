@@ -286,6 +286,10 @@ a {
 #footer__icons{
     font-size:35px;
     color:var(--font-color);
+    cursor: pointer;
+}
+#footer__icons:hover{
+    color:var(--primary-color);
 }
 .footer  p{
     font-size: small;
