@@ -1,13 +1,9 @@
 /* @import url('/styles.css'); */
-
-.header.sample{
+.nav{
     width:700px;
-    position:static;
-    z-index: 0;
+    background-color: var(--primary-color);
 }
 
 @media only screen and (max-width: 768px) {
-    .navbar+.sample{
-        width:290px;
-    }
+ 
 }
