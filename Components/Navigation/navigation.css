@@ -11,7 +11,12 @@
         color:var(--font-color);
         width:100% ;
 }
-
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem 1.5rem;
+}
 @media only screen and (max-width: 768px) {
 
 }
