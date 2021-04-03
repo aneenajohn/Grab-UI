@@ -29,6 +29,10 @@
     --background-color:#fff5f7;
     --ow-font-color:#fff5f7;
     --font-color:#320109;
+    --primary-color-s1:#a5031e;
+    --secondary-color-s1:#104d89;
+    --ow-sec-font-color:#f1f7fd;
+
 
     --fs-h1:calc(1.425rem + 2.1vw);
     --fs-h2:calc(1.375rem + 1.5vw);
@@ -55,6 +59,9 @@ body{
     color:var(--font-color);
 }
 
+.ml{
+    margin-left: 1rem;
+}
 
 #page{
     display: grid;
@@ -64,7 +71,7 @@ body{
     grid-template-areas: "header header"
                         "navigation main";
     grid-template-rows: 50px 2fr;
-    grid-template-columns: 190px 4.5fr;
+    grid-template-columns: 220px 4.5fr;
 }
 
 #page .header{
@@ -171,17 +178,18 @@ body{
     display:flex;
     flex-direction: column;
     justify-content:center;
-    align-items:flex-start;
+    align-items:center;
     cursor:pointer;
-    padding:2rem;
-    text-align: left;
-    width:max-content;
+    padding:1rem;
+    /* text-align: left; */
+    width:200px;
 }
 
 #nav__components{
     width:100%;
     color:var(--font-color);
-    text-align: left;
+    text-align: center;
+    font-size: 1.6rem;
     margin:0.3rem;
     padding:1.5rem 1rem 1.5rem 1rem;
 }
@@ -204,7 +212,7 @@ body{
 #page .main{
     grid-area:main;
     max-width:100%;
-    padding:4rem;
+    padding:4rem 5rem;
     height:100vh;
     text-align: justify;
     margin-bottom: 3rem;
