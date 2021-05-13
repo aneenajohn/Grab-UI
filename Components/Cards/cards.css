@@ -33,6 +33,52 @@
    /* bottom:-80%; */
 }
 
+
+/* Youtube card */
+.imageBox {
+   position: relative;
+   float: left;
+ }
+ 
+ .thumbnail {
+   width: 320px;
+   height: 180px;
+ }
+ 
+ .imageBox .hoverImg {
+   position: absolute;
+   left: 0;
+   top: 0;
+   display: none;
+ }
+ 
+ .imageBox:hover .hoverImg {
+   display: block;
+ }
+ 
+ .card__description{
+   width:320px;
+   /* background: #e1e3e4; */
+   display:grid;
+   grid-template-columns: 0.2fr 1fr;
+   grid-template-areas: "profile info";
+ }
+
+ .profile{
+    grid-area:profile;
+ }
+
+ .dp{
+    border-radius: 50%;
+ }
+
+ .info__title{
+    grid-area:info;
+    font-weight:bold;
+ }
+ .info__channel{
+    padding-top: 1rem;
+ }
 /* horizontal card with over lay */
 .card-hori{
    width: 400px;
