@@ -79,8 +79,19 @@
   color:var(--ow-sec-font-color);
 }
 
-
-
+/* Pills */
+.btn-pill{
+  padding:0.8rem;
+  border-radius: 15px;
+  background: var(--ow-font-color);
+  color:var(--font-color);
+  border:none;
+  width: fit-content;
+  filter:drop-shadow(10px 10px 20px rgb(233, 165, 165));
+}
+.btn-pill:hover{
+  border: 1px solid var(--primary-color);
+}
 /* Links */
 
 .btn-link{
