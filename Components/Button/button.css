@@ -83,14 +83,27 @@
 .btn-pill{
   padding:0.8rem;
   border-radius: 15px;
-  background: var(--ow-font-color);
-  color:var(--font-color);
+
+  margin-left:3rem;
   border:none;
   width: fit-content;
+
+}
+.btn-pill--primary{
+  background: var(--ow-font-color);
+  color:var(--font-color);
   filter:drop-shadow(10px 10px 20px rgb(233, 165, 165));
 }
-.btn-pill:hover{
+.btn-pill--primary:hover{
   border: 1px solid var(--primary-color);
+}
+.btn-pill--secondary{
+  background: var(--ow-sec-font-color);
+  color:var(--secondary-color);
+  filter:drop-shadow(10px 10px 20px rgb(152, 200, 233));
+}
+.btn-pill--secondary:hover{
+  border: 1px solid var(--secondary-color);
 }
 /* Links */
 
