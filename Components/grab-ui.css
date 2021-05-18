@@ -297,12 +297,12 @@ body{
     .nav__menu {
         position: fixed;
         left: -100%;
-        top: 5rem;
+        top: 8.2%;
         flex-direction: column;
         background-color:var(--background-color);
         width: 50%;
         /* height: 100%; */
-        border-radius: 2px;
+        /* border-radius: 2px; */
         text-align: center;
         transition: 0.3s;
         box-shadow:
