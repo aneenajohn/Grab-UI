@@ -1,0 +1,13 @@
+.rating{
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+.rating__count{
+    margin-left: 1.5rem;
+    color:rgb(44, 70, 70);
+}
+.fa-star,.fa-star-half-o,.fa-star-o{
+    color:rgb(250, 212, 42);
+    font-size: 20px;
+}

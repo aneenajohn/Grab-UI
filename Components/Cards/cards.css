@@ -1,0 +1,221 @@
+/* Cards */
+/* Vertical Card */
+.card{
+    width:315px;
+    height:500px;
+    margin-left:10rem;
+}
+.card:hover{
+   box-shadow:5px 10px 10px 7px #c2c0c0;
+}
+.card__desc{
+   margin:0;
+   padding:1rem 2rem;
+   background: #e7e4e4;
+}
+
+.card__details{
+    color:var(--primary-color);
+}
+
+/* card badge */
+.card__badge{
+    position: relative;
+}
+.card__label{
+   background-color: rgb(236, 213, 213);
+   display:inline-block;
+   padding:5px 10px;
+   border-top-right-radius:15px;
+   border-bottom-right-radius: 15px;
+   position:absolute;
+   bottom:38rem;
+   /* bottom:-80%; */
+}
+
+
+/* Youtube card */
+.imageBox {
+   position: relative;
+   float: left;
+ }
+ 
+ .thumbnail {
+   width: 320px;
+   height: 180px;
+ }
+ 
+ .imageBox .hoverImg {
+   position: absolute;
+   left: 0;
+   top: 0;
+   display: none;
+ }
+ 
+ .imageBox:hover .hoverImg {
+   display: block;
+ }
+ 
+ .card__description{
+   width:320px;
+   /* background: #e1e3e4; */
+   display:grid;
+   grid-template-columns: 0.2fr 1fr;
+   grid-template-areas: "profile info";
+ }
+
+ .profile{
+    grid-area:profile;
+ }
+
+ .dp{
+    border-radius: 50%;
+ }
+
+ .info__title{
+    grid-area:info;
+    font-weight:bold;
+ }
+ .info__channel{
+    padding-top: 1rem;
+ }
+/* horizontal card with over lay */
+.card-hori{
+   width: 400px;
+   height:380px;
+   margin-left:10rem;
+}
+.card-hori:hover{
+   box-shadow:5px 10px 10px 7px #fcddf0;
+}
+.card-hori__img{
+   width:400px;
+   height:300px;
+}
+.card-hori__overlay{
+   position:relative;
+}
+.card-hori__text{
+   position:absolute;
+   bottom:130px;
+   left:30px;
+   /* right:2px; */
+}
+
+/* Card with dismiss */
+.dismiss{
+   position:relative;
+}
+.dismiss .closebtn{
+   position: absolute;
+   bottom:355px;
+   /* left:380px; */
+   left:94%;
+}
+.dismiss .closebtn:hover{
+   color:var(--primary-color);
+}
+
+/* Text only card */
+.text-card{
+   width:40rem;
+   height:20rem;
+   padding:2rem;
+   border:1px solid black;
+   box-shadow:13px 13px 21px -5px rgb(0 0 0 / 30%);
+   margin-left:10rem;
+}
+
+.text-card__content>h3{
+   padding:1rem 0;
+}
+.text-card__content>h4{
+   padding-bottom:1rem;
+}
+
+/* Responsive Image */
+/* On screens that are 768px wide or more, apply this */
+.rounded-img{
+   border-radius: 50%;
+}
+@media only screen and (min-width: 768px) {
+.image{
+   width:384px;
+   height:277px;
+}}
+
+@media screen and (max-width: 768px) {
+   .rounded-img{
+       width:142px;
+       height:142px;
+   }
+ }
+
+ /* Mobile screens */
+ @media only screen and (max-width: 768px) {
+      .card{
+         margin-left: 1rem;
+         width:285px;
+      }
+
+      .card__img{
+         width:285px;
+      }
+
+      .card__label{
+         bottom:34rem;
+      }
+
+      .card-hori{
+         margin-left:1rem;
+         width: 280px;
+      }
+      .card-hori__img{
+         width: 280px;
+      }
+
+      /* .dismiss .closebtn{
+         position: absolute;
+         bottom:355px;
+      
+         left:94%;
+      } */
+
+      .text-card{
+         margin-left: 1rem;
+         width:280px;
+         height:auto;
+      }
+ }
+
+
+ @media only screen and (max-width: 340px) {
+   .card{
+      margin-left: 0rem;
+      width:255px;
+   }
+
+   .card__img{
+      width:255px;
+   }
+
+   .card__label{
+      bottom:30rem;
+   }
+
+   .card-hori{
+      margin-left:0rem;
+      width: 255px;
+      height:380px;
+   }
+
+   .card-hori__img{
+      width: 255px;
+      height:250px;
+   }
+
+   .text-card{
+      margin-left: 0rem;
+      width:270px;
+   }
+ }

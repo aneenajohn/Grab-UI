@@ -1,0 +1,74 @@
+/* Badge on icons */
+.icon-badge{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width:600px;
+}
+
+/* top/bottom prop of position works only when the parent has height */
+.icon-badge__container{
+    height:70px;
+}
+
+.icon-badge .icon-badge__envelope{
+    background-color: var(--primary-color);
+    color:var(--ow-font-color);
+    padding:5px 10px;
+    border-radius: 50%;
+    border:1px solid var(--ow-font-color);
+    position:relative;
+    right:10%;
+    bottom:57%;
+    
+}
+
+.icon-badge .icon-badge__bell{
+    background-color: var(--ow-font-color);
+    color:var(--primary-color);
+    padding:5px 10px;
+    border-radius: 50%;
+    border:1.5px solid var(--secondary-color);
+    /* color:red; */
+    position:relative;
+    right:30%;
+    bottom:57%;
+}
+
+.fa-bell{
+    color:#d90429
+}
+
+.icon-badge .icon-badge__cart{
+    background-color: var(--primary-color);
+    color:var(--ow-font-color);
+    padding:5px 10px;
+    border-radius: 50%;
+    border:1.5px solid var(--ow-font-color);
+    /* color:red; */
+    position:relative;
+    right:10%;
+    bottom:52%;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .icon-badge{
+        max-width: calc(100vw - 2rem);
+    }
+}
+
+@media only screen and (max-width: 358px) {
+    .icon-badge .icon-badge__envelope{
+        right:-35%;
+        bottom:80%;
+    }
+    .icon-badge .icon-badge__bell{
+        right:-32%;
+        bottom:82%;
+    }
+    .icon-badge .icon-badge__cart{
+        right:-48%;
+        bottom:80%;
+    }
+}
