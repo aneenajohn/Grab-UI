@@ -1,0 +1,96 @@
+/* Alerts */
+
+/* Error alert */
+.alerts__error{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color:#f8d7da;
+    /* background-color: rgb(241, 209, 209); */
+    padding:1rem;
+    color:rgb(97, 26, 21);
+    margin: 8px 0px; 
+    width:500px;
+    border: 1px solid  #f5c6cb;
+    border-left:4px solid rgb(97, 26, 21);
+    /* border:3px solid rgb(97, 26, 21); */
+}
+.alerts__icon{    
+    width:2em;
+    height:2em;
+}
+
+.alerts__error .alerts__icon--clr{
+    fill:#f44336;
+}
+/* Warning Alert */
+.alerts__warning{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: rgb(255 244 229);
+    padding:1rem;
+    color:rgb(102 60 0);
+    margin: 8px 0px; 
+    width:500px;
+    border:1px solid #ffeeba;
+    border-left:4px solid rgb(102 60 0);
+}
+.alerts__warning .alerts__icon--clr{
+    fill:#ff9800;
+}
+/* Info Alert */
+.alerts__info{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: rgb(232, 244, 253);
+    padding:1rem;
+    color:rgb(13, 60, 97);
+    margin: 8px 0px; 
+    width:500px; 
+    border:1px solid #bee5eb;
+    border-left: 4px solid rgb(13, 60, 97) ;
+}
+.alerts__info .alerts__icon--clr {
+    fill:#2196f3;
+}
+/* Success Alert */
+.alerts__success{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: rgb(237 247 237);
+    padding:1rem;
+    color:#4caf50;
+    width:500px;
+    border: 1px solid #c3e6cb;
+    border-left: 4px solid #4caf50;
+}
+.alerts__success .alerts__icon--clr{
+    fill:#4caf50;
+}
+
+.info{
+    padding: 8px 10px;
+    flex-grow: 1;
+}
+.info__msg{
+    margin-top:5px;
+}
+.closebtn{
+    font-weight: bold;
+    align-self: flex-start;
+    cursor:pointer;
+    font-size:20px;
+    transition: 0.3s;
+}
+.closebtn:hover {
+    color: black;
+  }
+
+  @media only screen and (max-width: 768px) {
+.alerts__error,.alerts__warning,.alerts__info,.alerts__success{
+    width:250px;
+}
+}

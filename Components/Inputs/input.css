@@ -1,0 +1,93 @@
+/* ..form__input{
+    position:relative;
+}
+
+..form__input__form{
+    height:4rem;
+    outline: none;
+    border:1px solid #8a8787;
+    border-radius: 5px;
+    padding:0 0.75rem;
+    cursor: pointer;
+}
+
+.form__label{
+    position: absolute;
+    left:2%;
+    top:25%;
+    background: #ffff;
+    color:#8a8787;
+    transition: all 0.4s ease-in-out;
+ }
+
+ ..form__input__form:focus ~ .form__label{
+    color:#FFFF;
+    border: 2px solid var(--primary-color);
+} 
+
+
+..form__input__form:valid ~ .form__label{
+  top:-20%;
+  padding: 0 0.45rem;
+  color: var(--primary-color);
+  background: var(--background-color);
+  border-radius:2px;
+  outline: none;
+  font-size: 1.3rem;
+} */
+
+input[name=email]{
+    width:inherit;
+    transition: width .3s ease-in-out;
+}
+
+input[name=email]:focus,input[name=email]:valid{
+    width:300px;
+}
+
+.form{
+    position: relative;
+}
+
+.form__input{
+    font-size:16px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    /* width:250px; */
+    border:1px solid #8a8787;
+    border-radius: 5px;
+}
+.form__input:focus{ 
+    outline:none; 
+    border: 1px solid var(--secondary-color);
+}
+
+.form__label  {
+    color:#999; 
+    font-size:15px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:2%;
+    top:25%;
+    background: #ffff;
+    transition: all 0.3s ease-in-out; 
+    -moz-transition: all 0.3s ease-in-out; 
+    -webkit-transition: all 0.3s ease-in-out;
+  }
+
+  .form__input:focus ~ .form__label{
+      color:var(--secondary-color);
+  }
+
+  .form__input:focus ~ .form__label, .form__input:valid ~ .form__label {
+    top:-20%;
+    padding: 0 0.45rem;
+    font-size:14px;
+    /* color:var(--primary-color); */
+    background: rgb(255, 255, 255);
+    border-radius:2px;
+    outline: none;
+  }
+
+  

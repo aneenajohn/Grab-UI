@@ -1,0 +1,108 @@
+.avatar{
+    display: flex;
+    max-width:600px;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* Image avatars */
+.avatar .avatar__img--sm{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+}
+.avatar .avatar__img--md{
+    width:75px;
+    height:75px;
+    border-radius: 50%;
+}
+.avatar .avatar__img--lg{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+}
+
+/* Alphabetical avatars */
+
+.avatar .avatar__alpha--sm{
+    background-color: #80ffdb;
+    width:50px;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+}
+
+.avatar .avatar__alpha--md{
+    background-color: #56cfe1;
+    width:75px;
+    height:75px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+    font-size:x-large;
+}
+
+.avatar .avatar__alpha--lg{
+    background-color: #5390d9;
+    width:100px;
+    height:100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+    font-size: xx-large;
+}
+
+/* Badge on avatars */
+/* .avatar__badge{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width:600px;
+} */
+.avatar__container{
+    height:80px;
+}
+/* top and bottom works only when you have a fixed height */
+
+.avatar__badge--green{
+    position:relative;
+    /* right:77%;
+    top:81%; */
+    left:70%;
+    bottom:20%; 
+    background-color: rgb(23, 189, 23);
+    width:13px;
+    height:13px;
+    border-radius: 50%;
+    border:1.2px solid #fff;
+}
+
+.avatar__container .avatar__badge--dnd{
+    background-color: var(--primary-color);
+    font-weight: bold;
+    color:#edf2f4;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 16px;
+    height:16px;
+    border-radius: 50%;
+    border:1.2px solid #fff;
+    position:relative;
+    left:70%;
+    bottom:20%; 
+}
+
+.avatar__img--circle{
+    border:4px solid red;
+}
+
+@media only screen and (max-width: 768px) {
+    .avatar{
+        max-width: calc(100vw - 5rem);
+    }
+}
